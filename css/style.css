@@ -805,3 +805,37 @@ img {
   height: 11px;
   fill: currentColor;
 }
+
+/* Оформление формы модалки */
+
+.form-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+textarea{
+  resize: none;
+}
+
+.form{
+  width: 100%;
+  padding: 40px;
+}
+.form-field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-label{
+  margin-bottom: 4px;
+}
+.form-input{
+  width: 100%;
+}

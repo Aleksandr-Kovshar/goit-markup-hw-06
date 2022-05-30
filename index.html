@@ -497,6 +497,56 @@
             <use href="./images/svg/symbol-defs.svg#icon-modalclose"></use>
           </svg>
         </button>
+
+        <form action="" method="" class="form" name="form">
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="user-name" id="name" />
+          </div>
+          <!-- Чтобы не задавать for="name и id="name", можно input вложить в label. Как ниже(но лучше не вкладывать, чтобы оформить можно было):
+          <label>
+            Телефон
+            <input type="tel" name="user-phone" />
+          </label> -->
+          <div class="form-field">
+            <label for="phone" class="form-label">Телефон</label>
+            <input type="tel" name="user-phone" id="phone" class="form-input" />
+          </div>
+          <div class="form-field">
+            <label for="email" class="form-label">Почта</label>
+            <input
+              type="email"
+              name="user-email"
+              id="email"
+              class="form-input"
+            />
+          </div>
+          <div class="form-field">
+            <label for="user-text" class="form-label">Комментарий</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="adreement"
+              value="adreement"
+              id="adreement"
+            />
+            <label for="adreement" class="form-label"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a></label
+            >
+          </div>
+
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
