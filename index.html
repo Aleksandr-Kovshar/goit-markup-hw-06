@@ -487,6 +487,44 @@
             </ul>
           </div>
         </div>
+        <div class="subscription-footer">
+          <form
+            action=""
+            method=""
+            class="subscription-form"
+            name="subscription-form"
+          >
+            <p class="subscription-form-title">Подпишитесь на рассылку</p>
+            <div class="subscription-form-wrapper">
+              <div class="subscription-form-field">
+                <input
+                  type="email"
+                  name="user-email-subscription"
+                  id="subscription"
+                  class="subscription-form-input"
+                />
+                <label for="name" class="label-subscription">E-mail</label>
+              </div>
+              <button type="submit" class="subscription-form-btn">
+                <p>Подписаться</p>
+                <span class="wrapper-icon-subscription-form">
+                  <svg class="icon-subscription-form">
+                    <use
+                      href="./images/svg/symbol-defs.svg#subscription-icon"
+                    ></use>
+                  </svg>
+                </span>
+              </button>
+              <!-- <span class="wrapper-icon-subscription-form">
+                <svg class="icon-subscription-form">
+                  <use
+                    href="./images/svg/symbol-defs.svg#subscription-icon"
+                  ></use>
+                </svg>
+              </span> -->
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Modal window -->
@@ -516,8 +554,13 @@
             <input type="tel" name="user-phone" />
           </label> -->
           <div class="form-field">
-            <label for="name">Телефон</label>
-            <input type="text" name="user-name" id="name" class="form-input" />
+            <label for="phone">Телефон</label>
+            <input
+              type="phone"
+              name="user-phone"
+              id="phone"
+              class="form-input"
+            />
             <span class="wrapper-icon-form"
               ><svg class="icon-form">
                 <use

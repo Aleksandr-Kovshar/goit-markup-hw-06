@@ -685,6 +685,7 @@ img {
   display: flex;
   justify-content:space-between;
   min-width: 206px;
+  margin-right: 93px;
 }
 .social-footer-link {
   width: 44px;
@@ -958,3 +959,125 @@ textarea{
   background-color: #188ce8;
 }
 
+
+
+
+
+
+
+
+.subscription-form{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.subscription-form-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.subscription-form-wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+
+
+}
+.subscription-form-input{
+  position: relative;
+  width: 358px;
+  height: 50px;
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding-left: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+
+}
+
+.label-subscription{
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  
+  
+
+}
+
+.subscription-form-input:focus + .label-subscription{
+  color:#2F303A;
+  transform: translateY(40px);
+  
+}
+
+/* .wrapper-icon-subscription-form{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #2a2a2a;
+
+} */
+
+.subscription-form-btn{
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-bg-color);
+  border-radius: 4px;
+  border-color: var(--accent-bg-color);
+
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+
+  outline: transparent;
+
+}
+
+.icon-subscription-form{
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.subscription-form-field{
+  margin-right: 12px;
+}
+.wrapper-icon-subscription-form{
+  position: relative;
+  bottom: -4px;
+  margin-left: 10px;
+  
+}
