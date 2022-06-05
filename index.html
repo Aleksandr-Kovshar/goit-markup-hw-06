@@ -502,7 +502,13 @@
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
           <div class="form-field">
             <label for="name">Имя</label>
-            <input type="text" name="user-name" id="name" />
+            <input type="text" name="user-name" id="name" class="form-input" />
+            <span class="wrapper-icon-form"
+              ><svg class="icon-form">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-person-form"
+                ></use></svg
+            ></span>
           </div>
           <!-- Чтобы не задавать for="name и id="name", можно input вложить в label. Как ниже(но лучше не вкладывать, чтобы оформить можно было):
           <label>
@@ -510,8 +516,14 @@
             <input type="tel" name="user-phone" />
           </label> -->
           <div class="form-field">
-            <label for="phone" class="form-label">Телефон</label>
-            <input type="tel" name="user-phone" id="phone" class="form-input" />
+            <label for="name">Телефон</label>
+            <input type="text" name="user-name" id="name" class="form-input" />
+            <span class="wrapper-icon-form"
+              ><svg class="icon-form">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-phone-form"
+                ></use></svg
+            ></span>
           </div>
           <div class="form-field">
             <label for="email" class="form-label">Почта</label>
@@ -521,6 +533,12 @@
               id="email"
               class="form-input"
             />
+            <span class="wrapper-icon-form"
+              ><svg class="icon-form">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-email-form"
+                ></use></svg
+            ></span>
           </div>
           <div class="form-field">
             <label for="user-text" class="form-label">Комментарий</label>
@@ -530,22 +548,29 @@
               cols="30"
               rows="10"
               placeholder="Введите текст"
+              class="user-text"
             ></textarea>
           </div>
-          <div>
+          <div class="form-field-checkbox">
             <input
               type="checkbox"
               name="adreement"
               value="adreement"
               id="adreement"
+              class="checkbox-adreement"
             />
-            <label for="adreement" class="form-label"
+            <label for="adreement" class="form-label form-label-check"
               >Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a></label
-            >
+              <a href="">Условия договора</a>
+              <span class="adreement-wrapper"
+                ><svg class="adreement-icon">
+                  <use
+                    href="./images/svg/symbol-defs.svg#check"
+                  ></use></svg></span
+            ></label>
           </div>
 
-          <button type="submit">Отправить</button>
+          <button type="submit" class="submit-form">Отправить</button>
         </form>
       </div>
     </div>
